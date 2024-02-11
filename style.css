@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    background: #f4f1f1;
+}
+
+.container {
+    text-align: center;
+    width: 100vh;
+    background-color: #fff;
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+
+.active {
+    background: #f7f7f7;
+}
+.active .player-name { font-weight: 300; }
+
+.player-1-panel, .player-2-panel {
+    padding: 100px;
+    width: 50%;
+    font-weight: 100;
+    font-size: 40px;
+    position: relative;
+}
+
+.player-name {
+    text-transform: uppercase;
+}
+
+.player-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 130px;
+}
+
+.round-count {
+    background-color: #EB4D4D;
+    color: #fff;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.round-label {
+    font-size: 13px;
+    color: black;
+    font-weight: 300;
+}
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 210px;
+    transform: translateX(-50%);
+    height: 90px;
+}
+
+i {
+    margin: 10px;
+    color: #EB4D4D;
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+.btn-new { top: 45px;}
+.btn-roll { top: 400px;}
+.btn-hold { top: 430px;}
