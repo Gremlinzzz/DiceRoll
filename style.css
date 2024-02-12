@@ -98,22 +98,25 @@ button:hover { box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3); }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
 
 /* UTILISATION DES MEDIA QUERIES POUR RENDRE LE SITE RESPONSIVE */
-@media screen and (max-width:428px) {
+@media screen and (max-width:425px) {
     .container {
-        min-width: 100vw;
-        padding-top: 150px;
-        display: block;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        align-items: center;
+        justify-content: space-around;
     }
 
     .player-0, .player-1 {
-        padding: 20px;
+        padding: 5px;
         font-weight: 100;
         font-size: 1.8rem;
-        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        min-width: 100vw;
+        min-width: 90vw;
     }
 
     .player-score {
@@ -133,8 +136,7 @@ button:hover { box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3); }
     .btn-new, .btn-roll, .btn-hold { 
         top: 90px;
         position: relative;
-        display: inline-flex;
-        justify-content: space-evenly;
+        display: flex;
     }
 
     button:hover {
@@ -143,7 +145,7 @@ button:hover { box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3); }
 
     .dice {
         position: absolute;
-        top: 40px;
+        top: 18px;
         height: 65px;
     }
 }
